@@ -2,6 +2,7 @@ import React from 'react';
 import { TypeAnimation } from 'react-type-animation';
 import myPhoto from "../../assets/images/bannerImg.png"
 import { FaDownload } from "react-icons/fa";
+import ResumePDF from "../../assets/resume/Resume of Parvej Hasan.pdf"
 
 
 
@@ -39,10 +40,16 @@ const Banner = () => {
 
                     <p className='my-5'>I'm a passionate MERN (MongoDB, Express.js, React.js, Node.js) stack developer, dedicated to crafting innovative web applications. With expertise in both front-end and back-end technologies, I specialize in creating responsive, high-performance websites. Let's collaborate and turn your ideas into reality!</p>
                     <div>
-                        <button className="btn bg-[#FF6B00] text-white normal-case text-xl px-8 rounded-md hover:bg-[#101010] hover:text-[#FF6B00] duration-1000">
-                            Download Resume
-                            <FaDownload></FaDownload>
-                        </button>
+                        <a href={ResumePDF}
+                            download="Resume of Parvej Hasan Pappu"
+                            target="_blank"
+                            rel="noreferrer"
+                        >
+                            <button className="btn bg-[#FF6B00] text-white normal-case text-xl px-8 rounded-md hover:bg-[#101010] hover:text-[#FF6B00] duration-1000">
+                                Download Resume
+                                <FaDownload></FaDownload>
+                            </button>
+                        </a>
                     </div>
                 </div>
                 <div className='w-full pt-4 mb-10 lg:mb-0'>
