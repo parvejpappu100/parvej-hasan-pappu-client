@@ -4,27 +4,34 @@ import "./Navbar.css"
 import { Element, Link } from 'react-scroll';
 import About from '../About/About';
 import Banner from '../Banner/Banner';
+import Services from '../Services/Services';
 
 const Navbar = () => {
 
     const [activeLink, setActiveLink] = useState('');
 
     const navOption = <>
-        <li><Link style={activeLink === 'home' ? { color: '#FF6B00', backgroundColor: 'white',borderBottom: '4px solid #FF6B00' , borderRadius: "0px" } : {}}
+        <li><Link style={activeLink === 'home' ? { color: '#FF6B00', backgroundColor: 'white', borderBottom: '4px solid #FF6B00', borderRadius: "0px" } : {}}
             className='hover:text-[#FF6B00]'
             to="home"
             spy={true}
             smooth={true}
             duration={500}
             onSetActive={() => setActiveLink('home')}>Home</Link></li>
-        <li><Link style={activeLink === 'about' ? { color: '#FF6B00', backgroundColor: 'white', borderBottom: '4px solid #FF6B00' , borderRadius: "0px" } : {}}
+        <li><Link style={activeLink === 'about' ? { color: '#FF6B00', backgroundColor: 'white', borderBottom: '4px solid #FF6B00', borderRadius: "0px" } : {}}
             className='hover:text-[#FF6B00]'
             to="about"
             spy={true}
             smooth={true}
             duration={500}
             onSetActive={() => setActiveLink('about')}>About</Link></li>
-        <li><a>Services</a></li>
+        <li><Link style={activeLink === 'services' ? { color: '#FF6B00', backgroundColor: 'white', borderBottom: '4px solid #FF6B00', borderRadius: "0px" } : {}}
+            className='hover:text-[#FF6B00]'
+            to="services"
+            spy={true}
+            smooth={true}
+            duration={500}
+            onSetActive={() => setActiveLink('services')}>Services</Link></li>
         <li><a>Skill</a></li>
         <li><a>Portfolio</a></li>
         <li><a>Testimonial</a></li>
@@ -65,6 +72,9 @@ const Navbar = () => {
                 </Element>
                 <Element name="about" className="section">
                     <About></About>
+                </Element>
+                <Element name="services" className="section">
+                    <Services></Services>
                 </Element>
             </div>
         </div>

@@ -7,7 +7,7 @@ import { FaRegCheckSquare } from 'react-icons/fa';
 
 const About = () => {
     return (
-        <div className='lg:container mx-auto my-24'>
+        <div className='lg:container mx-auto py-24'>
             <SectionTitle title={"About Me"} subTitle={"Know Me More"}></SectionTitle>
             <div className='flex flex-col lg:flex-row px-3 gap-20 items-center mt-28 '>
                 <div className='w-full'>
