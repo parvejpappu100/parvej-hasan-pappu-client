@@ -1,9 +1,13 @@
 import React from 'react';
 
-const SectionTitle = () => {
+const SectionTitle = ({ title, subTitle }) => {
     return (
-        <div>
-            <h1>THIS IS SECTION TITLE</h1>
+        <div className='text-center'>
+            <div className='flex  gap-3 items-center justify-center'>
+                <div className='bg-[#FF6B00] p-2 w-2 h-2 rounded-full'></div>
+                <h5 className='text-xl  '>{title}</h5>
+            </div>
+            <h3 className='text-4xl font-bold uppercase mt-5'>{subTitle}</h3>
         </div>
     );
 };
