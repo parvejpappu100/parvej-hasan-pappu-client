@@ -8,13 +8,13 @@ import { FaDownload } from "react-icons/fa";
 const Banner = () => {
     return (
         <div className='bg-gradient-to-r from-[#FFF3EA] to-[#FFF8EC] '>
-            <div className='flex flex-col-reverse lg:flex-row justify-between items-center lg:container mx-auto px-3'>
+            <div className='flex flex-col-reverse lg:flex-row justify-between items-center lg:container mx-auto px-3 pb-8 lg:pb-0'>
                 <div className=''>
                     <div className='flex  gap-3 items-center'>
                         <div className='bg-[#FF6B00] p-2 w-2 h-2 rounded-full'></div>
                         <h5 className='text-xl font-semibold uppercase'>Hi! I'm</h5>
                     </div>
-                    <h3 className='font-bold text-2xl md:text-4xl my-4 lg:text-6xl'>Parvej Hasan Pappu</h3>
+                    <h3 className='font-bold text-2xl md:text-4xl my-4 lg:text-5xl'>Parvej Hasan Pappu</h3>
 
                     <h2 className='text-2xl font-bold md:text-4xl lg:text-5xl'>I'm a  <TypeAnimation
                         sequence={[
@@ -31,7 +31,7 @@ const Banner = () => {
                         speed={20}
                         style={{ fontWeight: 'bold', display: 'inline-block' }}
                         repeat={Infinity}
-                        className='text-2xl font-bold text-[#FF6B00] md:text-4xl lg:text-6xl'
+                        className='text-2xl font-bold text-[#FF6B00] md:text-4xl lg:text-5xl'
                     /></h2>
                     <h2>
 
