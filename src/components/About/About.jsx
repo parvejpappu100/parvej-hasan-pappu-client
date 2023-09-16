@@ -4,6 +4,7 @@ import img from "../../assets/images/about.png"
 import projectLogo from "../../assets/images/projectLogo.png"
 import exLogo from "../../assets/images/exLogo.png"
 import { FaRegCheckSquare } from 'react-icons/fa';
+import { Link } from 'react-scroll';
 
 const About = () => {
     return (
@@ -60,9 +61,11 @@ const About = () => {
                         </div>
                     </div>
                     <div className='mt-12'>
-                        <button className="btn bg-[#FF6B00] text-white normal-case text-xl px-8 rounded-md hover:bg-[#101010] hover:text-[#FF6B00] duration-1000">
-                            Hire Me
-                        </button>
+                        <Link to='contact' smooth={true} duration={1000}>
+                            <button className="btn bg-[#FF6B00] text-white normal-case text-xl px-8 rounded-md hover:bg-[#101010] hover:text-[#FF6B00] duration-1000">
+                                Hire Me
+                            </button>
+                        </Link>
                     </div>
                 </div>
             </div>

@@ -4,7 +4,7 @@ import { FaFacebookF, FaGithub, FaInstagramSquare, FaLinkedinIn } from 'react-ic
 
 const Footer = () => {
     return (
-        <div className='bg-black'>
+        <div className='bg-black mt-24'>
             <footer className=" lg:container mx-auto footer py-24 px-4  text-neutral-content">
                 <aside>
                     <img src={logo} alt="" />
