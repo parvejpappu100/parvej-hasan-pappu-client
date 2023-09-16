@@ -23,7 +23,7 @@ const Portfolio = () => {
     const [activeTab, setActiveTab] = useState(0);
 
     return (
-        <div className='py-32 lg:container mx-auto px-3'>
+        <div className='py-32 lg:container mx-auto px-4'>
             <SectionTitle title={"My Work"} subTitle={"Visit My Portfolio"}></SectionTitle>
             <div>
                 <div className='mt-20'>

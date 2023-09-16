@@ -9,7 +9,7 @@ import ResumePDF from "../../assets/resume/Resume of Parvej Hasan.pdf"
 const Banner = () => {
     return (
         <div className='bg-gradient-to-r from-[#FFF3EA] to-[#FFF8EC] mb-24'>
-            <div className='flex flex-col-reverse lg:flex-row justify-between items-center lg:container mx-auto px-3 pb-8 lg:pb-0'>
+            <div className='flex flex-col-reverse lg:flex-row justify-between items-center lg:container mx-auto px-4 pb-8 lg:pb-0'>
                 <div className=''>
                     <div className='flex  gap-3 items-center'>
                         <div className='bg-[#FF6B00] p-2 w-2 h-2 rounded-full'></div>

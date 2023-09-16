@@ -9,7 +9,7 @@ const About = () => {
     return (
         <div className='lg:container mx-auto py-24'>
             <SectionTitle title={"About Me"} subTitle={"Know Me More"}></SectionTitle>
-            <div className='flex flex-col lg:flex-row px-3 gap-20 items-center mt-28 '>
+            <div className='flex flex-col lg:flex-row px-4 gap-20 items-center mt-28 '>
                 <div className='w-full'>
                     <img className=' hover:grayscale grayscale-0  transition duration-500' src={img} alt="" />
                 </div>

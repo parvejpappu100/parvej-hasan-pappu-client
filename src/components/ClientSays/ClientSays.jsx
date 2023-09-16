@@ -1,7 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import SectionTitle from '../SectionTitle/SectionTitle';
 import { Swiper, SwiperSlide } from 'swiper/react';
-import "./ClientSays.css"
 import { Rating } from '@smastrom/react-rating'
 
 import '@smastrom/react-rating/style.css'
@@ -23,7 +22,7 @@ const ClientSays = () => {
     }, [])
 
     return (
-        <div className='lg:container mx-auto pb-32 px-3'>
+        <div className='lg:container mx-auto py-32 px-4'>
             <SectionTitle title={"Testimonial"} subTitle={"Client Feedback"}></SectionTitle>
             <div className='mt-24'>
                 <Swiper
@@ -50,7 +49,6 @@ const ClientSays = () => {
                     }}
                     modules={[Pagination]}
                     className="mySwiper"
-                    customClass="mySwiper"
                 >
 
                     {testimonials.map(testimonial => <SwiperSlide key={testimonial._id}>

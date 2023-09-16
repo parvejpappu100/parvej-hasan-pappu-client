@@ -7,7 +7,7 @@ import { GiDatabase } from 'react-icons/gi';
 
 const Services = () => {
     return (
-        <div className='lg:container mx-auto px-3 py-32'>
+        <div className='lg:container mx-auto px-4 py-32'>
             <SectionTitle title={"My Services"} subTitle={"What I Do"}></SectionTitle>
             <div className='mt-24 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-5'>
                 <div className='flex flex-col hover:bg-[#FFF5EF] duration-500 text-center items-center border border-[#f5b58a] p-8 rounded '>
